@@ -6,6 +6,10 @@ I made this project, well... because i wanted to try and make something that cou
 
 # Full CAD Model
 
+# Wiring Diagram
+
+<img width="1045" height="572" alt="Wiring" src="https://github.com/user-attachments/assets/4f968849-9e65-428c-9804-28113a48864f" />
+
 # Bill Of Materials
 ### EMPTY
 (see journals for parts list!)
