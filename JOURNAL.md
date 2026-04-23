@@ -40,6 +40,7 @@ I dont really have any fitting image to add here as an additional so... illl jus
 # Circuit and Hardware Design
 _Time_Spent_
 2hrs
+
 # Overview
 After I was done with the whole system planning phase, I started the process of simulating the complete circuit connections of my system. I connected the the different components to different pins on the esp32. The only mapping that I had to really consider was the analog output of the LDR, since i learned that not all pins on a microcontroller can read analog data, so i connected it to the esp 0 pin. After that I connected the OLED, buzzer, PIR e.t.c to the other pins.
 
@@ -54,6 +55,7 @@ Anyways... after i fixed that, I proceeded to test the system as a whole, it wor
 # Firmware Planning
 _Time_Spent_
 2.5hrs
+
 # Overview
 In this session i designed the firmware structure. I knew that i would want the system to respond differently based on the type of event or environment, so decided to break the operating logic into states, that do different things based on their pre defined settings.
 
@@ -68,3 +70,18 @@ I also made sure that the alerts state is only triggered only when the device wa
 ![Screenshot 2026-04-23 081521](https://stasis.hackclub-assets.com/images/1776929340763-deul90.png)
 
 The system also has bluetooth integration, which allows for mode switching from a remote device. It also has two other commands which are RESET and RECALIBRATE. RESET returns the system back to ARMED state if it was already triggered. But if you think about it, returning it to its original state when the environment hasnt changed will just trigger it again, so thats why i added RECALIBRATE. This one would change the baseline values for triggering alerts from the sensors, so it can work in the new environment, and when you use RESET to return the values to normal too.
+
+
+
+# Final System and Firmware Test
+_Time_Spent_
+1.5hrs
+
+# Overview
+This was the final stage of the system design. I decided to test the fully integrated system and see how well the whole thing functions.
+
+First, I tested the motion detection system. I simulated movement within the software, the the sensor captured the change, the change was displayed on the OLED and the system switched to the alert state, which triggered the led and buzzer to kick in.
+
+![Screenshot 2026-04-23 085331](https://stasis.hackclub-assets.com/images/1776944512465-bxip31.png)
+
+I also tested the light sensor by adjusting the light intensity in that simulation. The sensor functioned as expected too, triggering the state change and alerts, and since the state change is triggered automatically, i was also successfully able to test that too. The LEDs also worked perfectly. The blue led indicated thst the system was UNARMED, reading the environment but not doing anything, it then switches to the green led when switched to ARMED through the command window, which represents how it will work through bluetooth btw. Red flashes when motion is detected amd yellow turns on when there is a light change, all with the buzzer doing its thing the whole time. RECALIBRATE and RESET instructions also work fine. There might be some other features i want to add but ill leave that till i actually build the device, then ill decide. And with that im basically done.
