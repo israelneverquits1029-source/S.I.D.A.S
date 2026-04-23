@@ -48,3 +48,23 @@ After I was done with the whole system planning phase, I started the process of 
 After i was done with the initial connections, i decided to test it, you know, to make sure everything was wired properly, thats where i encountered my first issue, the leds refused to turn on. At first i thought i wired them wrongly, or maybe the resistor had some sort of unknown issue, but i had another project i had made with leds that works fine and wired this one exactly like it so theres no way there could be any issue with the wiring. I adjusted the resistance of the resistors, changed the orientation of the leds, tried everything i could but nothing worked. Then i saw it, I wasnt even that the wiring had any issue technically, but i totally forgot to connect the esp 3.3v pin and gnd pin to the breadboard, so it was basically a simple thing i forgot that caused all the problems.
 
 Anyways... after i fixed that, I proceeded to test the system as a whole, it worked well... except that i wasnt able to test how it responds to commands while running. I thought the software i was using just didnt have an input panel, but i was wrong, it was there, hiding, blending in to the background, I had to go search where it is online.
+
+
+
+# Firmware Planning
+_Time_Spent_
+2.5hrs
+# Overview
+In this session i designed the firmware structure. I knew that i would want the system to respond differently based on the type of event or environment, so decided to break the operating logic into states, that do different things based on their pre defined settings.
+
+The main idea is that the system should continously read the environmental data and perform an action based on the data it recieves from the sensors. I used the loop function for this
+
+![Screenshot 2026-04-23 081452](https://stasis.hackclub-assets.com/images/1776928535912-j8ou9h.png)
+
+When the system is triggered in the ARMED state, It then activates the alert state which handles the output devices, while the ARMED state handles the sensor logic and data. The sensor handling logic works differently for the two sensors. The PIR sensor detects movement basically. The LDR is what required a bit more logic to it. Instead of just responding to light intensities at a set value, it works by measuring the change in light intensity from the baseline value you give it. That way it can work pretty well in almost any environment you put it, technically...
+
+I also made sure that the alerts state is only triggered only when the device was previously armed. The alert state is the one that actually handles the alerts and stuff
+
+![Screenshot 2026-04-23 081521](https://stasis.hackclub-assets.com/images/1776929340763-deul90.png)
+
+The system also has bluetooth integration, which allows for mode switching from a remote device. It also has two other commands which are RESET and RECALIBRATE. RESET returns the system back to ARMED state if it was already triggered. But if you think about it, returning it to its original state when the environment hasnt changed will just trigger it again, so thats why i added RECALIBRATE. This one would change the baseline values for triggering alerts from the sensors, so it can work in the new environment, and when you use RESET to return the values to normal too.
