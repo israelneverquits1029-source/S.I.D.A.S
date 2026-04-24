@@ -4,7 +4,13 @@ I made this project, well... because i wanted to try and make something that cou
 
 # Images
 
+<img width="517" height="496" alt="Screenshot 2026-04-24 174915" src="https://github.com/user-attachments/assets/4e95bb85-46b8-4ed6-ad8e-cfee9762003b" />
+
+<img width="540" height="508" alt="Screenshot 2026-04-24 175006" src="https://github.com/user-attachments/assets/ffc777e0-60d9-4f42-a783-a9f23e379c84" />
+
 # Full CAD Model
+
+<img width="457" height="513" alt="Screenshot 2026-04-24 174835" src="https://github.com/user-attachments/assets/ba404977-f61e-4dff-bd9a-740999e11d3d" />
 
 # Wiring Diagram
 
