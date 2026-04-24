@@ -11,5 +11,7 @@ I made this project, well... because i wanted to try and make something that cou
 <img width="1045" height="572" alt="Wiring" src="https://github.com/user-attachments/assets/4f968849-9e65-428c-9804-28113a48864f" />
 
 # Bill Of Materials
-### EMPTY
-(see journals for parts list!)
+[S.I.D.A.S-bom.csv](https://github.com/user-attachments/files/27061009/S.I.D.A.S-bom.csv)
+|---:|---|---|---|---|---:|
+| Name | Purpose | Quantity | Total Cost (USD) | Link | Distributor |
+| PIR Motion Detector Module | For detecting sudden movements | 1 | 1.50 | https://www.aliexpress.com/item/1005005140420875.html | Aliexpress |
