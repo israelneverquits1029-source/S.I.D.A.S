@@ -85,3 +85,19 @@ First, I tested the motion detection system. I simulated movement within the sof
 ![Screenshot 2026-04-23 085331](https://stasis.hackclub-assets.com/images/1776944512465-bxip31.png)
 
 I also tested the light sensor by adjusting the light intensity in that simulation. The sensor functioned as expected too, triggering the state change and alerts, and since the state change is triggered automatically, i was also successfully able to test that too. The LEDs also worked perfectly. The blue led indicated thst the system was UNARMED, reading the environment but not doing anything, it then switches to the green led when switched to ARMED through the command window, which represents how it will work through bluetooth btw. Red flashes when motion is detected amd yellow turns on when there is a light change, all with the buzzer doing its thing the whole time. RECALIBRATE and RESET instructions also work fine. There might be some other features i want to add but ill leave that till i actually build the device, then ill decide. And with that im basically done.
+
+
+
+# CAD Design
+_Time_Spent_
+2hrs
+# Overview
+I decided to make the CAD model for the device, just for aesthetics and documentation. The design is pretty simple All visual components and sensors on the front face for obvious reasons (so they could do their job without obstruction)
+
+<img width="457" height="513" alt="Screenshot 2026-04-24 174835" src="https://github.com/user-attachments/assets/5fbbd5db-b7ef-4d46-8a80-982019182043" />
+
+Mid design, i realised making look like a sort of robot would be cooler since its name is S.I.D.A.S. SIDAS the home security monitor, yeah, thats sounds cool
+
+<img width="540" height="508" alt="Screenshot 2026-04-24 175006" src="https://github.com/user-attachments/assets/8c2c0290-e638-4fa1-bb2f-2afed5437726" />
+
+I used a circular design cause rectangles seem too basic and ive used them alot recently soo... definitely needed a switch up
