@@ -4,21 +4,24 @@ I made this project, well... because i wanted to try and make something that cou
 
 # Images
 
-<img width="517" height="496" alt="Screenshot 2026-04-24 174915" src="https://github.com/user-attachments/assets/4e95bb85-46b8-4ed6-ad8e-cfee9762003b" />
+<img width="476" height="503" alt="Screenshot 2026-05-10 210709" src="https://github.com/user-attachments/assets/b9e0a29c-6ba6-4851-8be8-923526d9efba" />
 
-<img width="540" height="508" alt="Screenshot 2026-04-24 175006" src="https://github.com/user-attachments/assets/ffc777e0-60d9-4f42-a783-a9f23e379c84" />
+<img width="485" height="442" alt="Screenshot 2026-05-10 210636" src="https://github.com/user-attachments/assets/e03005b5-d573-47eb-bba9-0b0c1ae06518" />
+
+<img width="625" height="521" alt="Screenshot 2026-05-10 210855" src="https://github.com/user-attachments/assets/4c2c51c9-f81f-4d98-b91b-c382b050d3f4" />
 
 # Full CAD Model
 
-<img width="457" height="513" alt="Screenshot 2026-04-24 174835" src="https://github.com/user-attachments/assets/ba404977-f61e-4dff-bd9a-740999e11d3d" />
+<img width="508" height="508" alt="Screenshot 2026-05-10 210559" src="https://github.com/user-attachments/assets/88544bb5-f06c-4c6e-abb8-b26dfedfc7e9" />
 
 # Wiring Diagram
 
 <img width="1045" height="572" alt="Wiring" src="https://github.com/user-attachments/assets/4f968849-9e65-428c-9804-28113a48864f" />
 
 # Bill Of Materials
-[S.I.D.A.S-bom.csv](https://github.com/user-attachments/files/27061009/S.I.D.A.S-bom.csv)
+[S.I.D.A.S-bom (1).csv](https://github.com/user-attachments/files/27573806/S.I.D.A.S-bom.1.csv)
 
 | Name | Purpose | Quantity | Total Cost (USD) | Link | Distributor |
 |---:|---|---|---|---|---:|
+| 3d printed case | Project enclosure | 1 | 12.00 | https://stasis.hackclub.com/dashboard/projects/cmo77hxz701ri01s4xif7aua0 | printing-legion |
 | PIR Motion Detector Module | For detecting sudden movements | 1 | 1.50 | https://www.aliexpress.com/item/1005005140420875.html | Aliexpress |
